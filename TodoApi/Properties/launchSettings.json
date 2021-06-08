@@ -13,7 +13,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       //"launchUrl": "swagger",
-      "launchUrl": "api/TodoItems",
+      //"launchUrl": "api/TodoItems", // Remove the launchUrl property to force the app to open at index.html—the project's default file.
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -23,7 +23,7 @@
       "dotnetRunMessages": "true",
       "launchBrowser": true,
       //"launchUrl": "swagger",
-      "launchUrl": "api/TodoItems",
+      //"launchUrl": "api/TodoItems", // Remove the launchUrl property to force the app to open at index.html—the project's default file.
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

@@ -20,7 +20,7 @@ namespace TodoApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList")); // Register the database context
 
             services.AddControllers();
         }
@@ -32,6 +32,9 @@ namespace TodoApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseDefaultFiles();  // Call the web API with JavaScript
+            app.UseStaticFiles();   // Call the web API with JavaScript
 
             app.UseHttpsRedirection();
 
